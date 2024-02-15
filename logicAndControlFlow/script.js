@@ -192,3 +192,29 @@ console.log(fruitsName);
 let age = 20;
 let canVote = age === 18 ? "Yes, you can vote" : age < 18 ? "No, you can't vote" : "Definetly! You can vote";
 console.log(canVote)
+//LOOP
+//while loop
+// let i = 0;
+// while(i < 10) {
+//     console.log(i)
+//     i++
+// }
+//for loop
+// for ([initialzation]; [condtion]; [final - expression]) {
+    
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i)
+// }
+
+for(let i = 1; i<= 8; i++) {
+    console.log(i)
+}
+
+const colors = ['red', 'blue', 'yellow', 'green'];
+
+for(let i = 0; i < colors.length; i++) {
+    console.log(colors[i])
+}
+
