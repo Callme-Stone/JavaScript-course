@@ -67,3 +67,9 @@ console.log(lowNumber)
 const isEven = (nestedGame) => {
     return nestedGame % 2 === 0 ? true : false;
 }
+
+const even = isEven(6);
+console.log(even)
+
+const odd = isEven(7);
+console.log(odd)
