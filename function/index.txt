@@ -1,0 +1,4 @@
+function square(number) { // params is passed in the paraenethesis
+    // statement
+}
+square() // function/invocation
