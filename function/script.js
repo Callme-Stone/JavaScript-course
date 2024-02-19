@@ -73,3 +73,20 @@ console.log(even)
 
 const odd = isEven(7);
 console.log(odd)
+
+// check for prime number
+function isPrime(number) {
+    if(number <= 1) {
+        return
+    }
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            return false;
+        }
+        
+    }
+    return true;
+}
+
+const prime = isPrime()
+console.log(prime)
