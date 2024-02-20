@@ -1,32 +1,82 @@
-const name = "Jagunlabi"
-const age = 70
-const school = "Harvard University"
+// const name = "Jagunlabi"
+// const age = 70
+// const school = "Harvard University"
 
-const one = () => {
-    return `My name is ${name}, I'm ${age} years of age, and my i went to ${school}`;
+// const one = () => {
+//     return `My name is ${name}, I'm ${age} years of age, and my i went to ${school}`;
+// }
+// const answer = one()
+// console.log(answer)
+
+// // Local scope
+// const localScope =() => {
+//     const names = "oloye Pipo"
+//     const religion = "muslim"
+//     const activity = "Drinking of water"
+
+//     return `${names} who is a ${religion} enjoys ${activity}`;
+// }
+// const oloye = localScope()
+// console.log(oloye)
+
+
+// const firstName = "John"
+// const lastName = "Doe"
+// const education = "Phd.amtomic physics"
+// const countryRes = "Nigeria"
+
+// const info = () => {
+//     return `Mr ${lastName} is the new President of this company. With his experience and ${education} background he will do wonders, but he prefers being called ${firstName}`
+// }
+// const reply = info()
+// console.log(reply)
+
+
+
+//Hoisting 
+//const a = 2 // something here is similar to func expression and arrow function but its not similar to func declaration
+// const b = 3
+const result = exampleFive()
+console.log(result)
+
+function exampleFive() {
+    return 2 + 2
 }
-const answer = one()
-console.log(answer)
 
-// Local scope
-const localScope =() => {
-    const names = "oloye Pipo"
-    const religion = "muslim"
-    const activity = "Drinking of water"
+//const exampleFive = () => {
+//     return 2 + 2
+// }
 
-    return `${names} who is a ${religion} enjoys ${activity}`;
+const me = function () {}
+const m = 2
+
+console.log(g)
+
+var g
+
+// g = 4
+
+// console.log(g)
+
+
+// CLOSURE
+
+// The scope regarding a function inside a function
+
+const outerFunction = () => {
+    const ben = 5
+
+    const innerFunction = () => {
+        const man = 7
+
+        return ben + man
+    }
+
+    const final = innerFunction()
+    console.log(final * 2)
+
+
 }
-const oloye = localScope()
-console.log(oloye)
 
+outerFunction()
 
-const firstName = "John"
-const lastName = "Doe"
-const education = "Phd.amtomic physics"
-const countryRes = "Nigeria"
-
-const info = () => {
-    return `Mr ${lastName} is the new President of this company. With his experience and ${education} background he will do wonders, but he prefers being called ${firstName}`
-}
-const reply = info()
-console.log(reply)
