@@ -80,3 +80,56 @@ const outerFunction = () => {
 
 outerFunction()
 
+// A function that carries a function within the condition that if true retuen a certain number then return the final answer of the condition * 4
+// And in the main function the find answer of the previous function should be divided by 2
+
+const mainFunction = (condition) => {
+    const a = 4
+
+    const subFunction = () => {
+        let firstAns 
+        const double = 3
+
+        if (true) {
+            firstAns = 2
+        }
+        
+        
+        
+    }
+    
+
+    
+
+    
+   
+}
+total = 40
+console.log(total / 2)
+mainFunction()
+
+// const firstFunc = () => {
+//     const div = 2
+
+
+//     const secondFunc = () => {
+//         const condition = true
+//         let certainNumber 
+//         const mult = 4
+
+//         if (condition) {
+//             certainNumber = 5
+//         }
+
+//         const ans = certainNumber * mult
+//         return ans
+//     }
+
+//     const initialAnswer = secondFunc()
+
+//     const finalAnswer = initialAnswer / div
+
+//     console.log(finalAnswer)
+
+// }
+// firstFunc()
