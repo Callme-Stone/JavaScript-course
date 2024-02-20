@@ -94,42 +94,40 @@ const mainFunction = (condition) => {
             firstAns = 2
         }
         
-        
-        
+        const anss = firstAns * double
+        return anss    
     }
-    
-
-    
-
+    const initialAnswer = subFunction()
+    const total = initialAnswer / a
+    console.log(total)
     
    
 }
-total = 40
-console.log(total / 2)
+
 mainFunction()
 
-// const firstFunc = () => {
-//     const div = 2
+const firstFunc = () => {
+    const div = 2
 
 
-//     const secondFunc = () => {
-//         const condition = true
-//         let certainNumber 
-//         const mult = 4
+    const secondFunc = () => {
+        const condition = true
+        let certainNumber 
+        const mult = 4
 
-//         if (condition) {
-//             certainNumber = 5
-//         }
+        if (condition) {
+            certainNumber = 5
+        }
 
-//         const ans = certainNumber * mult
-//         return ans
-//     }
+        const ans = certainNumber * mult
+        return ans
+    }
 
-//     const initialAnswer = secondFunc()
+    const initialAnswer = secondFunc()
 
-//     const finalAnswer = initialAnswer / div
+    const finalAnswer = initialAnswer / div
 
-//     console.log(finalAnswer)
+    console.log(finalAnswer)
 
-// }
-// firstFunc()
+}
+firstFunc()
