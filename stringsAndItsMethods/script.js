@@ -45,9 +45,20 @@ console.log(words.toLowerCase())
 
 // Checking for SUbstring
 
-const man = "I love coding and my favourite language is Javascript"
+const man = "I love coding and my favourite language is Javascript, Javascript"
 
 const final = man.indexOf('Javascript')
+const main = man.lastIndexOf('Javascript')
 
 console.log(final)
+console.log(main)
+
+const check = man.includes('favourite')
+console.log(check)
+
+const starting = man.startsWith('I')
+console.log(starting)
+
+const ending = man.endsWith('Javascript')
+console.log(ending)
 
