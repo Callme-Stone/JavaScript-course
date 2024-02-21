@@ -94,3 +94,6 @@ console.log(join1)
 
 const dogSays = "woof "
 console.log(dogSays.repeat(9))
+
+const trim = " the market is full  "
+console.log(trim.trim())
