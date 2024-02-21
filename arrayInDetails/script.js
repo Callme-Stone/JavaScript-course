@@ -1,6 +1,11 @@
 const cohorts = [
     "Oluwaseyi", "David", "Hannah", "Board man", "John doe"
 ]
+console.log(cohorts);
+
+const replaceE1 = (cohorts[2] = "Dense")
+
+cohorts[5] = "Dupe"
 
 // ES 5
 for (let i = 0; i < cohorts.length; i++) {
@@ -11,7 +16,6 @@ for(const names of cohorts) {
     console.log(names)
 }
 
-console.log(cohorts);
 
 const nested = [[1,2], [3,4], [5,6]]
 const newArr = nested[0]
@@ -38,3 +42,19 @@ const arr = [
 ]
 
 console.log(typeof arr)
+
+// Push method
+// Is used to add a new element to the end of an array
+
+const student = ["Yemi", "Shola", "Dupes", "Denise"];
+
+student.push("DU", "JH")
+console.log(student);
+
+//POP Method
+
+const numbers = [3, 4, 5, 6, 7];
+console.log(numbers)
+
+numbers.pop();
+console.log(numbers)
