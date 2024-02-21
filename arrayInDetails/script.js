@@ -1,7 +1,17 @@
 const cohorts = [
     "Oluwaseyi", "David", "Hannah", "Board man", "John doe"
 ]
-console.log(cohorts.length);
+
+// ES 5
+for (let i = 0; i < cohorts.length; i++) {
+    console.log(i, cohorts[i])
+}
+//ES6
+for(const names of cohorts) {
+    console.log(names)
+}
+
+console.log(cohorts);
 
 const nested = [[1,2], [3,4], [5,6]]
 const newArr = nested[0]
@@ -21,6 +31,10 @@ const arr = [
         name : "Bola",
         age : 30
     },
+
+    function name () {
+        alert("Gbe mi de be")
+    }
 ]
 
-console.log(arr)
+console.log(typeof arr)
