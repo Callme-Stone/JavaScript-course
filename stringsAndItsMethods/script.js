@@ -62,3 +62,35 @@ console.log(starting)
 const ending = man.endsWith('Javascript')
 console.log(ending)
 
+
+// Getting a Substring
+const exampleString = "Hotdog"
+console.log(exampleString.slice(0, 3))
+console.log(exampleString.slice(3))
+console.log(exampleString.slice(4))
+
+// SPLIT METHOD
+const sentence1 = "the quick brown fox jumped ob=ver the lazy dog";
+console.log(sentence1.split(' '))
+
+const name4 = "Nofisat and zainab";
+const split1 = name4.split(' ')
+console.log(split1);
+
+
+//REVERSE() and JOIN() METHOD
+const name2 = "Oluwaseyi and David";
+const split2 = name2.split(' ')
+console.log(split2)
+
+
+const reverse$ = split2.reverse()
+console.log(reverse$);
+
+const join1 = reverse$.join(' ')
+console.log(join1)
+
+// REPEAT() METHOD
+
+const dogSays = "woof "
+console.log(dogSays.repeat(9))
