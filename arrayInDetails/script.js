@@ -147,7 +147,7 @@ const main = man.lastIndexOf('Javascript')
 console.log(final)
 // console.log(main)
 
-const _names = ['David', 'Kay', 'Money']
+let _names = ['David', 'Kay', 'Money']
 
 
 // //ES5 loop
@@ -163,19 +163,40 @@ const _names = ['David', 'Kay', 'Money']
 
 // FOR EACH METHOD
 
-_names.forEach(function() {});
+// _names.forEach(function() {});
 
-_names.forEach((value, i) => {
-    console.log(value.toUpperCase());
-    console.log(i);
-    // console.log(arr);
+// _names.forEach((value, i) => {
+//     console.log(value.toUpperCase());
+//     console.log(i);
+//     // console.log(arr);
     
-})
+// })
 
-const nums = [2, 3, 4, 5, 6, 7, 8, 9]
+let nums = [2, 6, 3, 8, 2, 9]
+
+// nums.sort()
+
+
 nums.forEach(function(value, i) {
     console.log(value, i)
 })
 
-const mammals = ['Goat', 'Man', 'Baboon', 'Dog']
+
+
+let mammals = ['Goat', 'Man', 'Baboon', 'Dog']
+mammals.sort()
+
 mammals.forEach((mammal, i) => console.log(mammal.toUpperCase(), i))
+
+console.log(mammals)
+
+
+//Example 3
+let totalVal = 0;
+const trans = [42, 45, 26, 4, 13, 16]
+
+trans.forEach((tran) => console.log(totalVal, (tran += totalVal),(tran *= 2)))
+
+// Example 4
+
+_names.forEach((name) => console.log(`Congratulations ${name} for coming to DLT Africa`))
