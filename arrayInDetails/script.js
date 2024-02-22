@@ -195,8 +195,39 @@ console.log(mammals)
 let totalVal = 0;
 const trans = [42, 45, 26, 4, 13, 16]
 
-trans.forEach((tran) => console.log(totalVal, (tran += totalVal),(tran *= 2)))
+trans.forEach((tran) => console.log(totalVal, (totalVal += tran),(tran *= 2)))
 
 // Example 4
 
 _names.forEach((name) => console.log(`Congratulations ${name} for coming to DLT Africa`))
+
+
+// Map method
+// The map method of arrat instances creates a new array populated with the results of calling a provided function on every element in the calling array
+
+const array1 = [1,3,6,4]
+const map1 = array1.map((x) => x * 2)
+
+console.log(map1)
+
+const inventory = [
+    {name:"Rice", price: 4040},
+    {name:"Beans", price: 1200},
+    {name:"Dodo", price: 600},
+    {name:"Noodles", price: 300},
+    {name:"Kunu", price: 200},
+]
+
+// const inven = inventory.map((value) => {
+//     return value.price
+// })
+// console.log(inven)
+
+const iven = inventory.map((value) => value.name)
+console.log(iven)
+
+let A = [2,4,6,8]
+const map2 = A.map((x) => x * 2)
+
+console.log(map2)
+
