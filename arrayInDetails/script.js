@@ -147,3 +147,22 @@ const main = man.lastIndexOf('Javascript')
 console.log(final)
 // console.log(main)
 
+const _names = ['David', 'Kay', 'Money']
+
+
+//ES5 loop
+for(let i = 0; i < _names.length; i++) {
+    console.log(i, _names[i])
+}
+
+// ES6 loop 
+for(const _name of _names) {
+    console.log(_name)
+}
+
+
+// FOR EACH METHOD
+
+_names.forEach(function() {});
+
+_names.forEach(() => {})
