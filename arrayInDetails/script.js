@@ -231,3 +231,7 @@ const map2 = A.map((x) => x * 2)
 
 console.log(map2)
 
+const numberss = [1,3,6]
+const roots = numberss.map((numa) => Math.sqrt(numa))
+
+console.log(roots)
