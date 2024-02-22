@@ -59,6 +59,16 @@ console.log(numbers)
 numbers.pop();
 console.log(numbers)
 
+
+
+
+
+
+
+
+
+
+
 // SLICE ()
 const men = ['Tunmise', 'Kenny', 'Soliu', 'Bode', 'Hayzed'];
 console.log(men)
@@ -82,3 +92,28 @@ console.log(coolestAmong)
 
 // toString()
 
+const menString = men.toString()
+console.log(menString)
+
+//to.include
+
+const doo = men.includes('Hayzed')
+console.log(doo)
+const doodole = men.includes('Oluwaseyi')
+console.log(doodole)
+
+// SORT()
+men.sort();
+console.log(men)
+
+const num = ['3', '5', '2', '0', '15']
+console.log(num)
+
+num.sort();
+console.log(num)
+
+const alph = ['G', 'H', 'J', 'O', 'K', 'A'];
+console.log(alph)
+
+alph.sort()
+console.log(alph)
