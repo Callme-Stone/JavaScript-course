@@ -106,7 +106,7 @@ console.log(doodole)
 men.sort();
 console.log(men)
 
-const num = ['3', '5', '2', '0', '15']
+const num = ['3', '5', '2', '0', '15', '77', '99', '20']
 console.log(num)
 
 num.sort();
@@ -117,3 +117,33 @@ console.log(alph)
 
 alph.sort()
 console.log(alph)
+
+num.sort((a, b) => a -b)
+num.sort((a, b) => b -a)
+console.log(num)
+
+// indexOf()
+
+const $nums = [1, 3, 5, 3, 7, 8, 4, 9, 3, 6, 1]
+console.log($nums)
+const index1 = $nums.indexOf(3)
+console.log(index1)
+
+const mew = $nums.lastIndexOf(3)
+console.log(mew)
+
+const $numsy = ['a', 'd', 's', 'f', 'w', 'r', 'f', 's', 't', 'y', 'w']
+console.log($numsy)
+const index12 = $numsy.indexOf('f')
+console.log(index12)
+
+
+
+const man = "I love coding and my favourite language is Javascript, Javascript"
+
+const final = man.indexOf('Javascript')
+const main = man.lastIndexOf('Javascript')
+
+console.log(final)
+// console.log(main)
+
