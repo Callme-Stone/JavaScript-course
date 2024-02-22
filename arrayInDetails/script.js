@@ -58,3 +58,27 @@ console.log(numbers)
 
 numbers.pop();
 console.log(numbers)
+
+// SLICE ()
+const men = ['Tunmise', 'Kenny', 'Soliu', 'Bode', 'Hayzed'];
+console.log(men)
+
+const newString = 'Nafeesah'
+console.log(newString.length);
+const newSlice = newString.slice(2, 7)
+console.log(newSlice)
+
+const name = 'Oluwaseyi'
+console.log(name)
+
+const slice = name.slice(3, 6)
+console.log(slice)
+
+const baddestMen = men.slice(2, 5)
+console.log(baddestMen)
+
+const coolestAmong = men.slice(2)
+console.log(coolestAmong)
+
+// toString()
+
