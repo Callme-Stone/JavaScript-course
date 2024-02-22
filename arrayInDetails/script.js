@@ -150,19 +150,32 @@ console.log(final)
 const _names = ['David', 'Kay', 'Money']
 
 
-//ES5 loop
-for(let i = 0; i < _names.length; i++) {
-    console.log(i, _names[i])
-}
+// //ES5 loop
+// for(let i = 0; i < _names.length; i++) {
+//     console.log(i, _names[i])
+// }
 
-// ES6 loop 
-for(const _name of _names) {
-    console.log(_name)
-}
+// // ES6 loop 
+// for(const _name of _names) {
+//     console.log(_name)
+// }
 
 
 // FOR EACH METHOD
 
 _names.forEach(function() {});
 
-_names.forEach(() => {})
+_names.forEach((value, i) => {
+    console.log(value.toUpperCase());
+    console.log(i);
+    // console.log(arr);
+    
+})
+
+const nums = [2, 3, 4, 5, 6, 7, 8, 9]
+nums.forEach(function(value, i) {
+    console.log(value, i)
+})
+
+const mammals = ['Goat', 'Man', 'Baboon', 'Dog']
+mammals.forEach((mammal, i) => console.log(mammal.toUpperCase(), i))
