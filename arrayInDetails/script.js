@@ -235,3 +235,46 @@ const numberss = [1,3,6]
 const roots = numberss.map((numa) => Math.sqrt(numa))
 
 console.log(roots)
+
+
+//Array Filters
+
+const num$ = [-10, 0, -2, 4, -9, 5, 8]
+
+// const filteredNumbers = num$.filter((num) => {
+//     return num < 0
+// })
+
+// console.log(filteredNumbers)
+
+//  for(const num of num$) {
+//         console.log(num)
+//     }
+
+const filteredNumbers1 = []
+
+for(let i = 0 ; i < numbers.length; i++){
+    if(numbers[i] < 0){
+        filteredNumbers1.push(numbers[i])
+    }
+}
+
+console.log(filteredNumbers1)
+
+const employees = [
+    {name: "David", overtime: 10},
+    {name: "Bola", overtime: 2},
+    {name: "Dayo", overtime: 4},
+    {name: "Tobi", overtime: 1},
+    {name: "Funmi", overtime: 7},
+    {name: "Funke", overtime: 5},
+
+]
+
+const employeesToReward = employees.filter((employee) => {
+    if(employee.overtime >= 7){
+        return true
+    }
+})
+
+console.log(employeesToReward)
