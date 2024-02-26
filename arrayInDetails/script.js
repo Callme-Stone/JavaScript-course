@@ -364,3 +364,26 @@ studentName.forEach((name) => {
      console.log(`Hey ${name} you got more than average`)
     
 })
+
+// ARRAY SOME AND EVERY
+
+const box = [1, 2, 3, 4, 5, 6, 7]
+
+
+// Some checks if some of the properties in an array meets a particular condition
+console.log(box.some((el) => {return el > 0}))
+
+// Every checks if all of the properties in an array meets a particular condition
+console.log(box.every((el) => {return el > 8}))
+
+// ARRAY REDUCE 
+
+// Loops through the array and return the sum of the array. It takes two parameters whic are accumulator and value.
+
+const boxes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const answer = boxes.reduce((accumulator, value) => {
+    return accumulator + value
+}, 0)
+
+
+console.log(answer)
