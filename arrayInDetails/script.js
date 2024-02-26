@@ -307,3 +307,28 @@ const aquaticAnimals = creatures.filter((creature) => {
 })
 
 console.log(aquaticAnimals)
+
+
+//FIND METHOD
+
+const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const value = digits.find((digit) => {
+    return digit > 6
+})
+
+console.log(value)
+
+const states = [
+    'Ogun State',
+    'Anambara State',
+    'Lagos State',
+    'Kogi State',
+]
+
+const state = states.find((state) => {
+    return state.startsWith('L')
+
+})
+
+console.log(state)
