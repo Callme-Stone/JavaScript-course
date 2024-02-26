@@ -332,3 +332,35 @@ const state = states.find((state) => {
 })
 
 console.log(state)
+
+// A student assessment took place, with total mark of 10, Give us 7 students and mark them over 10, now give reward to each students with a score ovr the mark of 6
+
+
+const students = [
+    {name: "Dayo", score: 10},
+    {name: "Tunde", score: 2},
+    {name: "Fola", score: 4},
+    {name: "Tobi", score: 6},
+    {name: "Iroh", score: 5},
+    {name: "Aang", score: 9},
+    {name: "Katara", score: 10},
+]
+
+
+const studentsOverMark = students.filter((student) => {
+    if(student.score > 6){
+        return true
+    }
+    
+})
+console.log(studentsOverMark)
+
+const studentName = studentsOverMark.map((student) => {
+    return student.name
+})
+console.log(studentName)
+
+studentName.forEach((name) => {
+     console.log(`Hey ${name} you got more than average`)
+    
+})
