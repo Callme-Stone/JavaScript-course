@@ -209,3 +209,31 @@ console.log(secondPerson)
 const animals = ["Slot", "Poccupine"]
 const otherAnimals = animals
 
+animals.push("Goat")
+console.log(animals)
+console.log(otherAnimals)
+
+//copying objects
+
+const data = {
+    firstName: "Zainab",
+    lastName: "Abdullah"
+}
+
+const otherData = data;
+console.log(otherData)
+console.log(data === otherData)
+
+//EQUALITY
+
+const person1 = {
+    firstName: "soliu"
+}
+const otherPerson1 = {
+    firstName: "Soliu"   
+}
+
+
+console.log(person1 === otherPerson1) // false
+console.log(person1 !== otherPerson1) // true
+
