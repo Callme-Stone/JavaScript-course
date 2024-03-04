@@ -45,28 +45,28 @@ const user2 = fetchUser1("test", (user2) => {
 
 //Call back hell
 
-const fetchUserTwo = (username, callback) => {
-    setTimeout(() => {
-        console.log("Now we have the users")
-        callback(username)
-    }, 2000)
-}
+// const fetchUserTwo = (username, callback) => {
+//     setTimeout(() => {
+//         console.log("Now we have the users")
+//         callback(username)
+//     }, 2000)
+// }
 
-const fetchUserPhotos = (username, callback) => {
-setTimeout(() => {
-    console.log(`Now we ha e the photos for ${username}`)
-    callback(["Photo 1", "Photo 2"])
-}, 2000)
-}
+// const fetchUserPhotos = (username, callback) => {
+// setTimeout(() => {
+//     console.log(`Now we have the photos for ${username}`)
+//     callback(["Photo 1", "Photo 2"])
+// }, 2000)
+// }
 
-const fetchPhotosDetails = (photo, callback) => {
-    setTimeout(() => {
-        console.log(`Now we have the photos details ${photo}`)
-        callback("details")
-    }, 2000)
-}
+// const fetchPhotosDetails = (photo, callback) => {
+//     setTimeout(() => {
+//         console.log(`Now we have the photos details ${photo}`)
+//         callback("details")
+//     }, 2000)
+// }
 
-const user3 = fetchUserTwo("Micheal", (user) => {
+const user3 = fetchUser("Micheal", (user) => {
     console.log(`Your name is: ${user.username}`)
     fetchUserPhotos(user.username, (userPhotos) => {
         console.log(`Your photos are: ${userPhotos}`)
@@ -80,7 +80,7 @@ const user3 = fetchUserTwo("Micheal", (user) => {
 
 
 
-const user4 = fetchUserTwo("Micheal", (user) => {
+const user4 = fetchUser("Micheal", (user) => {
     fetchUserPhotos(user.username, (userPhotos) => {
         fetchPhotosDetails(userPhotos[0], (details) => {
             fetchPhotosDetails(userPhotos[0], (details) => {
@@ -93,3 +93,57 @@ const user4 = fetchUserTwo("Micheal", (user) => {
         })
     })
 })
+
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("Now we are in Promise")
+
+        resolve({username: "Bode"})
+        reject("User not found")
+    }, 5000)
+})
+
+promise
+.then((user) => console.log(user.userame))
+.catch((error) => console.log(error))
+
+
+const fetchUserTwo = (username) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("We are using promise")
+            resolve(username)
+
+        }, 4000)
+    })
+}
+
+
+const fetchUserPhotos = (username) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("We have the photos")
+
+            resolve(["Photo 1", "Photo 2"])
+        }, 4000)
+    })
+
+}
+
+const fetchPhotosDetails = (photo) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Now we have the photos details")
+
+            resolve("details")
+        }, 2000)
+    })
+ 
+}
+
+fetchUserTwo("Zainab")
+    .then((user) => fetchUserPhotos(user))
+    .then((photos) => fetchUserPhotos(photos[0]))
+    .then((details) => fetchUserPhotos(details))
+    
